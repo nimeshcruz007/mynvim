@@ -1,4 +1,4 @@
-vim.keymap.set("n","<leader>e",vim.cmd.Ex)
+vim.keymap.set("n","<leader>e",vim.cmd.Ex,{noremap = true})
 
 vim.keymap.set("n","j","gj")
 vim.keymap.set("n","k","gk")
