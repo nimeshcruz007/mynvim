@@ -13,5 +13,16 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 vim.g.mapleader = " "
 
+vim.opt.wrap = true
+vim.opt.formatoptions:remove('c')
+vim.opt.formatoptions:remove('r')
+vim.opt.formatoptions:remove('o')
+vim.opt.breakindent = true
+vim.opt.breakindentopt = 'shift:0'
+vim.opt.textwidth = 80
+vim.opt.autoindent = false
+vim.opt.smartindent = false
 
 
+-- Netrw global varible for the netrw plugin
+vim.g.netrw_keepdir = 0
