@@ -16,3 +16,8 @@ vim.keymap.set("n", "<tab>", vim.cmd.tabnext)
 
 vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
+
+vim.keymap.set("i", "{", "{}<Esc>ha", { noremap = true })
+vim.keymap.set("i", "[", "[]<Esc>ha", { noremap = true })
+vim.keymap.set("i", "\"", "\"\"<Esc>ha", { noremap = true })
+vim.keymap.set("i", "(", "()<Esc>ha", { noremap = true })
