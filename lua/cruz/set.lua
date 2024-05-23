@@ -19,9 +19,11 @@ vim.opt.formatoptions:remove('r')
 vim.opt.formatoptions:remove('o')
 vim.opt.breakindent = true
 vim.opt.breakindentopt = 'shift:0'
-vim.opt.textwidth = 80
 vim.opt.autoindent = false
 vim.opt.smartindent = false
+vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.opt.textwidth = 0
 
 
 -- Netrw global varible for the netrw plugin
