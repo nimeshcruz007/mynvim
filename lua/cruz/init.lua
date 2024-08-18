@@ -1,2 +1,2 @@
-require("cruz.remap")
 require("cruz.set")
+require("cruz.remap")

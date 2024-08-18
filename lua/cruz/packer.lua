@@ -35,4 +35,34 @@ return require('packer').startup(function(use)
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
+
+    use { "akinsho/toggleterm.nvim", tag = '*', config = function()
+        require("toggleterm").setup()
+    end }
+    use({
+        "kylechui/nvim-surround",
+        tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+        config = function()
+            require("nvim-surround").setup({
+                -- Configuration here, or leave empty to use defaults
+            })
+        end
+    })
+    use {
+        'nvim-tree/nvim-web-devicons', -- optional
+    }
+    use {
+        'nvim-tree/nvim-tree.lua',
+        requires = {
+            'nvim-tree/nvim-web-devicons', -- optional
+        },
+    }
+    use "rafamadriz/friendly-snippets"
+
+    use({
+        "stevearc/conform.nvim",
+        config = function()
+            require("conform").setup()
+        end,
+    })
 end)
